@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Transporte | Guía</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="../css/base/variables.css" rel="stylesheet">
+  <link href="../css/layout/layout.css" rel="stylesheet">
+  <link href="../css/components/card.css" rel="stylesheet">
+</head>
+<body>
+  <header id="site-header"></header>
+  <main class="container">
+    <section class="hero">
+      <h1>Transporte</h1>
+      <p>Cómo moverte por la región.</p>
+    </section>
+    <div id="app"></div>
+  </main>
+  <div id="site-footer"></div>
+  <script type="module">
+    import { mountPartials } from '../js/common.js';
+    await mountPartials();
+    const s = document.createElement('script');
+    s.type = 'module';
+    s.src = '../js/pages/subcat.js';
+    s.dataset.page = 'transporte';
+    document.body.appendChild(s);
+  </script>
+</body>
+</html>

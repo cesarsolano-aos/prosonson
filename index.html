@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <title>Inicio | Guía</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="./css/base/variables.css" rel="stylesheet">
+  <link href="./css/layout/layout.css" rel="stylesheet">
+  <link href="./css/components/card.css" rel="stylesheet">
+
+</head>
+<body>
+  <header id="site-header"></header>
+  <main class="container">
+
+<section class="hero">
+  <h1>Bienvenido</h1>
+  <p>Explora turismo, hoteles y emprendimientos locales.</p>
+</section>
+
+    <div id="app"></div>
+  </main>
+  <div id="site-footer"></div>
+  <script type="module">
+    import { mountPartials } from './js/common.js';
+    await mountPartials();
+
+import { DATA } from './js/data.js';
+import { renderCards } from './js/common.js';
+const destacados = [
+  ...DATA.turismo.museos.slice(0,1),
+  ...DATA.hoteles.slice(0,1),
+  ...DATA.emprendimientos.slice(0,1),
+];
+renderCards(document.getElementById('app'), destacados, 'turismo.html');
+
+  </script>
+</body>
+</html>

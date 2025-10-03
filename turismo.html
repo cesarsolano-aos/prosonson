@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <title>Turismo | Guía</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="./css/base/variables.css" rel="stylesheet">
+  <link href="./css/layout/layout.css" rel="stylesheet">
+  <link href="./css/components/card.css" rel="stylesheet">
+
+</head>
+<body>
+  <header id="site-header"></header>
+  <main class="container">
+
+<section class="hero">
+  <h1>Turismo</h1>
+  <p>Explora museos, restaurantes, sitios y transporte.</p>
+  <p>
+    <a class="btn" href="./turismo/museos.html">Museos</a>
+    <a class="btn" href="./turismo/restaurantes.html">Restaurantes</a>
+    <a class="btn" href="./turismo/sitios.html">Sitios</a>
+    <a class="btn" href="./turismo/transporte.html">Transporte</a>
+  </p>
+</section>
+
+    <div id="app"></div>
+  </main>
+  <div id="site-footer"></div>
+  <script type="module">
+    import { mountPartials } from './js/common.js';
+    await mountPartials();
+
+import './js/pages/turismo.js';
+
+  </script>
+</body>
+</html>

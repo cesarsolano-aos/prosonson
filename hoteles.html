@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <title>Hoteles | Guía</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="./css/base/variables.css" rel="stylesheet">
+  <link href="./css/layout/layout.css" rel="stylesheet">
+  <link href="./css/components/card.css" rel="stylesheet">
+
+</head>
+<body>
+  <header id="site-header"></header>
+  <main class="container">
+
+<section class="hero">
+  <h1>Hoteles</h1>
+  <p>Alojamientos para todo presupuesto.</p>
+</section>
+
+    <div id="app"></div>
+  </main>
+  <div id="site-footer"></div>
+  <script type="module">
+    import { mountPartials } from './js/common.js';
+    await mountPartials();
+
+import './js/pages/hoteles.js';
+
+  </script>
+</body>
+</html>
