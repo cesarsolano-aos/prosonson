@@ -5,7 +5,7 @@
   --bg: var(--primary);
   --text: #1d1d1f;
   --muted: #666;
-  --radius: 14px;
+  --radius: 5px;
   --gap: 14px;
   --max: 1100px;
   --shadow: 0 2px 10px rgba(0, 0, 0, .06);
