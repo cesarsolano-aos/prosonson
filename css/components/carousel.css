@@ -7,6 +7,7 @@
 	margin-right: 7.5vw;
 	margin-top: 50px;
 	border-radius: 30px;
+	position: relative;
 }
 
 .carousel-wrapper {
@@ -20,6 +21,8 @@
 .carousel-item {
 	width: 100%;
 	height: 100%;
+	position: absolute;
+	top: 0;
 }
 
 .carousel-item img {
@@ -29,14 +32,61 @@
 	object-position: center;
 }
 
-.carousel-controls {
-
+.carousel-item-active {
+	z-index: 1;
 }
 
 .carousel-control {
+	height: 80px;
+	width: 80px;
+	top: calc( 50% - 40px );
+	z-index: 2;
+	position: absolute;
+	border: none;
+	border-radius: 50%;
+	background-color: transparent;
+	opacity: 0.5;
+	transition: opacity 0.2s ease-in-out;
+	cursor: pointer;
+}
 
+.carousel-control svg {
+	color: white;
+}
+
+.carousel-control:hover {
+	opacity: 0.9;
+}
+
+.carousel-control-left {
+	left: 0;
+}
+
+.carousel-control-right {
+	right: 0;
 }
 
 .carousel-dots {
+	position: absolute;
+	width: 100%;
+	display: flex;
+	gap: 16px;
+	justify-content: center;
+	bottom: 30px;
+	z-index: 2;
+}
 
+.carousel-dots button {
+	width: 24px;
+	height: 24px;
+	background-color: white;
+	border: none;
+	border-radius: 50%;
+	opacity: 0.5;
+	cursor: pointer;
+	transition: opacity 0.2s ease-in-out;
+}
+
+.carousel-dots button:hover {
+	opacity: 0.9;
 }
