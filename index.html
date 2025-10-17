@@ -1,61 +1,119 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-<head>
-  <title>Inicio | Guía</title>
+  <head>
+    <title>Inicio | Guía</title>
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="./css/base/variables.css" rel="stylesheet">
-  <link href="./css/layout/layout.css" rel="stylesheet">
-  <link href="./css/components/card.css" rel="stylesheet">
-  <link href="./css/components/carousel.css" rel="stylesheet">
-  <script src="./js/partials.js" type="module" defer></script>
-</head>
-<body>
-  <header id="site-header"></header>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="./css/base/variables.css" rel="stylesheet" />
+    <link href="./css/layout/layout.css" rel="stylesheet" />
+    <link href="./css/components/card.css" rel="stylesheet" />
+    <link href="./css/components/carousel.css" rel="stylesheet" />
+    <link href="./css/components/sections.css" rel="stylesheet" />
+    <script src="./js/partials.js" type="module" defer></script>
+  </head>
+  <body>
+    <header id="site-header"></header>
 
-  <div class="carousel">
-    <ul class="carousel-wrapper">
-      <li class="carousel-item">
-        <img src="assets/images/carousel1.jpg" alt="">
-      </li>
-      <li class="carousel-item">
-        <img src="assets/images/carousel2.jpg" alt="">
-      </li>
-      <li class="carousel-item">
-        <img src="assets/images/carousel3.jpg" alt="">
-      </li>
-    </ul>
+    <div class="carousel">
+      <ul class="carousel-wrapper">
+        <li class="carousel-item">
+          <img src="assets/images/carousel1.jpg" alt="" />
+        </li>
+        <li class="carousel-item">
+          <img src="assets/images/carousel2.jpg" alt="" />
+        </li>
+        <li class="carousel-item">
+          <img src="assets/images/carousel3.jpg" alt="" />
+        </li>
+      </ul>
 
-    <div class="carousel-controls">
-      <button class="carousel-control">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
-          <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
-        </svg>
-      </button>
-      <button class="carousel-control">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-          <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
-        </svg>
-      </button>
+      <div class="carousel-controls">
+        <button class="carousel-control">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-arrow-left"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"
+            />
+          </svg>
+        </button>
+        <button class="carousel-control">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-arrow-right"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <div class="carousel-dots">
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+      </div>
     </div>
 
-    <div class="carousel-dots">
-      <button>1</button>
-      <button>2</button>
-      <button>3</button>
-    </div>
-  </div>
-
-  <main class="container">
-    <section class="hero">
+    <main class="container">
+      <!--<section class="hero">
       <h1>Bienvenido</h1>
       <p>Explora turismo, hoteles y emprendimientos locales.</p>
     </section>
 
-    <div id="app"></div>
-  </main>
+    <div id="app"></div>-->
 
-  <div id="site-footer"></div>
-</body>
+      <section class="contenidoInteres">
+        <h3>Contenido de interes</h3>
+        <div class="contenedorContenidoInteres">
+          <div class="itemContenidoInteres">
+            <img src="assets/images/carousel1.jpg" alt="" />
+            <p>
+              Este es el contenido de interes, Este es el contenido de interes,
+              Este es el contenido de interes, Este es el contenido de interes,
+              Este es el contenido de interes, Este es el contenido de interes,
+              Este es el contenido de interes, Este es el contenido de interes,
+              Este es el contenido de interes, Este es el contenido de interes,
+            </p>
+          </div>
+          <div class="itemContenidoInteres">
+            <img src="assets/images/carousel1.jpg" alt="" />
+            <p>
+              Este es el contenido de interes, Este es el contenido de interes,
+              Este es el contenido de interes...
+            </p>
+          </div>
+          <div class="itemContenidoInteres">
+            <img src="assets/images/carousel1.jpg" alt="" />
+            <p>
+              Este es el contenido de interes, Este es el contenido de interes,
+              Este es el contenido de interes...
+            </p>
+          </div>
+          <div class="itemContenidoInteres">
+            <img src="assets/images/carousel1.jpg" alt="" />
+            <p>
+              Este es el contenido de interes, Este es el contenido de interes,
+              Este es el contenido de interes...
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="site-footer"></div>
+  </body>
 </html>
