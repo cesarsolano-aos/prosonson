@@ -10,11 +10,12 @@
   <link href="./css/components/card.css" rel="stylesheet">
   <link href="./css/components/carousel.css" rel="stylesheet">
   <script src="./js/partials.js" type="module" defer></script>
+  <script src="./js/components/carousel.js" defer></script>
 </head>
 <body>
   <header id="site-header"></header>
 
-  <div class="carousel">
+  <div id="carousel" class="carousel">
     <ul class="carousel-wrapper">
       <li class="carousel-item carousel-item-active">
         <img src="assets/images/carousel1.jpg" alt="">
@@ -40,11 +41,7 @@
       </button>
     </div>
 
-    <div class="carousel-dots">
-      <button></button>
-      <button></button>
-      <button></button>
-    </div>
+    <div class="carousel-dots"></div>
   </div>
 
   <main class="container">
