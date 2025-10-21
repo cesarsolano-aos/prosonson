@@ -1,10 +1,11 @@
-.contenidoInteres {
+.contenedorSeccion {
 	background-color: #fff;
 	border-radius: var(--radius);
-
 	margin: 8px;
 	padding: 16px;
 }
+
+/* ---- Contenido Interes ---- */
 
 .contenedorContenidoInteres {
 	display: flex;
@@ -71,4 +72,55 @@
 
 .itemContenidoInteres p {
 	overflow: overlay;
+}
+
+
+/* ---- Directorio ---- */
+
+.contenedorDirectorio {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	gap: var(--gap);
+}
+
+.itemDirectorio {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.itemDirectorio img {
+	height: 80px;
+	object-fit: contain;
+	border-radius: var(--radius);
+}
+
+.itemDirectorio span {
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+}
+
+.itemDirectorio p {
+	font-weight: bold;
+}
+
+.itemDirectorio a {
+	color: var(--text);
+	text-decoration: none;
+
+	display: inline-flex;
+	align-items: center;
+	gap: 6px
+}
+
+.itemDirectorio a::before {
+	content: "";
+	display: inline-block;
+	background: url("../../assets/llamar.png");
+	width: 16px;
+	height: 16px;
+	background-size: contain;
+	background-repeat: no-repeat
 }
